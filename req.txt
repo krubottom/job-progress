@@ -1,0 +1,2 @@
+pip install pyexcel
+pip install pyexcel-xls
