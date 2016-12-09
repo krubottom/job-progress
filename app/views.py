@@ -15,7 +15,6 @@ files_index = AutoIndex(app, os.path.curdir + '/app/reports', add_url_rules=Fals
 @app.route("/")
 @app.route("/index")
 def index():
-    #return "Hello from " + socket.gethostname()
 	return render_template('index.html', title='Home')
 
 @app.route('/reports/', defaults={'path': ''})
