@@ -1,4 +1,5 @@
 import pyexcel as pe
+import datetime
 
 new_records = pe.get_records(file_name="jobs.xlsx")
 old_records = pe.get_records(file_name="archive/jobs-120816.xlsx")
@@ -6,7 +7,7 @@ old_records = pe.get_records(file_name="archive/jobs-120816.xlsx")
 pairs = zip(new_records, old_records)
 
 if any(x != y for x, y in pairs):
-    print("Job Progress:")
+    print "Job Progress, generated", datetime.date.today().strftime('%B %d, %Y')
     for new, old in zip(new_records, old_records):
         for key, value in new.items():
             if value != old[key] and value !="":
