@@ -1,1 +1,1 @@
-{"_default": {"1": {"rex": "False", "type": "door", "name": "d1", "dc": "False"}}}
+{"_default": {"1": {"rex": "False", "type": "door", "name": "d1", "dc": "False"}, "2": {"dc-input": "uri0-1", "rex": "False", "type": "door", "name": "d1", "dc": "False"}}}

@@ -2,7 +2,7 @@ from tinydb import TinyDB, Query
 
 db = TinyDB('db.json')
 
-# db.insert({'name': 'd1', 'type': 'door', 'dc': 'False', 'rex': 'False'})
+# db.insert({'name': 'd1', 'type': 'door', 'dc': 'False', 'rex': 'False', 'dc-input': 'uri0-1'})
 
 item = Query()
 
